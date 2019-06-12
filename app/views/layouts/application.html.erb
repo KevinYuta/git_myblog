@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myblog</title>
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,24 @@
   </head>
 
   <body>
+  　<helper>
+  　  <div class="header__bar row">
+        <h1 class="grid-6"><a href="/">学生から始める投資の手順</a></h1>
+        
+       <div class="category grid-6">
+         
+       </div>
+     </div>
+     
+     
+  　  
+  　</helper>
     <%= yield %>
+    
+    <footer>
+      <p>
+        Copyright 学生から始める投資の手順
+      </p>
+    </footer>
   </body>
 </html>
