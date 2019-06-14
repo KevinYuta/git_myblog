@@ -1,0 +1,2 @@
+class Cafemenu < ApplicationRecord
+end
