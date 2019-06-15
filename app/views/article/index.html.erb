@@ -1,0 +1,13 @@
+<% @articles.each do |article| %>
+    <div class="col s12 m6">
+      <div class="card lighten-5">
+        <div class="card-content lighten-5text">
+          <p><%= article.content %></p>
+        </div>
+        <div class="card-action">
+          <li class="btn waves-effect"><%= link_to '編集', edit_text_path(text.id), method: :get %></li>
+          <li class="btn waves-effect"><%= link_to '削除', text_path(text.id),method: :delete %></li>
+        </div>
+      </div>
+    </div>
+<% end %>
