@@ -1,5 +1,10 @@
 RailsAdmin.config do |config|
-
+  config.model 'Cafemenu' do
+    edit do
+      field :name, :string
+      field :file, :carrierwave
+    end
+  end
   ### Popular gems integration
 
   # == Devise ==
